@@ -12,6 +12,17 @@
   </head>
   <body>
   <h1>Login</h1>
+  {%if error%}
+  <p>{{ error }}</p>
+  {% endif %}
+  <form method="POST">
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" required><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+    <button type="submit">Login</button>
+  </form>
+
   </body>
   <footer>
   </footer>
